@@ -1,5 +1,5 @@
 from stats import count_words
-from stats import count_chars
+from stats import get_chars_dictionary 
 from stats import sort_chars
 import sys
 
@@ -20,7 +20,7 @@ def main():
     text = get_book_text(filepath)
 #    print(f"Found {count_words(text)} total words")
     #print(text.split())
-    chars = count_chars(text)
+    chars = get_chars_dictionary(text)
     sorted_chars = sort_chars(chars)
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {filepath}...")
