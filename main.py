@@ -18,10 +18,7 @@ def main():
     else:
         filepath = sys.argv[1]
 
-    #self.assertIsNotfilepath = "./books/frankenstein.txt"
     text = get_book_text(filepath)
-#    print(f"Found {count_words(text)} total words")
-    #print(text.split())
     chars = get_chars_dictionary(text)
     sorted_chars = sort_chars(chars)
     print("============ BOOKBOT ============")
